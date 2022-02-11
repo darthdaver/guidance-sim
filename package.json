@@ -11,7 +11,7 @@
     "eslint": "^2.4.0",
     "events": "^1.1.0",
     "guidance-geojson": "^0.3.1",
-    "guidance-replay": "^0.1.4",
+    "guidance-replay": "https://github.com/darthdaver/guidance-replay",
     "jsonlint": "^1.6.2",
     "mapbox-gl": "^0.17.0",
     "navigation.js": "1.1.1",
@@ -24,7 +24,7 @@
     "turf-point-on-line": "^1.0.2"
   },
   "scripts": {
-    "start": "budo ./sim/index.js:sim/bundle.js --dir sim/ --live -- -t [ envify --NODE_ENV development ]",
+    "start": "budo ./sim/index.js:sim/bundle.js --dir sim/ --open -- -t [ envify --NODE_ENV development ]",
     "pretest": "eslint lib test *.js",
     "test": "tape test/*.test.js",
     "configure": "./lib/configure.sh",
