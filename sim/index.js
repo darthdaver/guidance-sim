@@ -14,7 +14,7 @@ if (!process.env.MapboxAccessToken) {
   mapboxgl.accessToken = process.env.MapboxAccessToken;
 }
 
-var res = run(config); // run the simulation
+var res = run(config, 1000, '10x'); // run the simulation
 
 res.on('update', function(data) {
   var locator = new Locator(config.routes);
